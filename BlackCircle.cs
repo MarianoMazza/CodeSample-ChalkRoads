@@ -51,7 +51,8 @@ public class BlackCircle : MonoBehaviour
     public void SpawnIfInactive()
     {
         if (gameObject.activeSelf) return;
-            gameObject.SetActive(true);
+        
+        gameObject.SetActive(true);
         if (Random.Range(1, 3) == 1)
         {
             transform.position = new Vector3(Random.Range(-8.6f, -6), Random.Range(-3.6f, 5.5f), -7);
