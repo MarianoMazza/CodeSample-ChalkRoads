@@ -21,6 +21,6 @@ public class ParentWhiteCircle : MonoBehaviour
     public void SpawnChild(int childToSpawn)
     {
         whiteCircles[childToSpawn].SetActive(true);
-        whiteCircles[childToSpawn].transform.position = new Vector3(Random.Range(-4f, 3f), Random.Range(-0.60f, 3.4f), -5);
+        whiteCircles[childToSpawn].transform.position = new Vector3(Random.Range(-4, 3), Random.Range(-0.60f, 3.4f), -5);
     }
 }
