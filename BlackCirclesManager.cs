@@ -40,19 +40,13 @@ public class BlackCirclesManager : MonoBehaviour
         if (activeBlackCircles != 1)
         {
             activeBlackCircles--;
-        }
-        for (int i = 0; i < blackCircles.Length; i++)
-        {
-            if (i < activeBlackCircles)
+            blackCircles[activeBlackCircles].gameObject.SetActive(false);
+            for (int i = 0; i < activeBlackCircles; i++)
             {
                 blackCircles[i].Shrink();
             }
-            else
-            {
-                blackCircles[i].gameObject.SetActive(false);
-            }
+            Spawn();
         }
-        Spawn();
         gameManager.DamagePlayer();
     }
 
