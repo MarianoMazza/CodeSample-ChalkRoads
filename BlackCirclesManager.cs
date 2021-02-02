@@ -24,10 +24,7 @@ public class BlackCirclesManager : MonoBehaviour
 
     public void IncreaseDifficulty()
     {
-        if (activeBlackCircles < blackCircles.Length)
-        {
-            activeBlackCircles++;
-        }
+        activeBlackCircles++;
         for (int i = 0; i < activeBlackCircles - 1; i++)
         {
             blackCircles[i].Grow();
