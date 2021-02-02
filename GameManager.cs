@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour
         blackCirclesManager.Spawn();
     }
 
-    void SpawnAndAdvance()
+    private void SpawnAndAdvance()
     {
         selectedParent.SpawnChild(selectedWhiteCircles);
         if (selectedWhiteCircles != darkness.Length)
@@ -80,17 +80,17 @@ public class GameManager : MonoBehaviour
 
     private void Loss()
     {
-        this.GetComponent<Animator>().SetTrigger("BadEnding");
-        Invoke("ResetScene", 6);
+        this.GetComponent<Animator>().SetTrigger("Negro");
+        Invoke(nameof(ResetScene), 6);
     }
 
-    void Victory()
+    private void Victory()
     {
-        this.GetComponent<Animator>().SetTrigger("GoodEnding");
-        Invoke("ResetScene", 6);
+        this.GetComponent<Animator>().SetTrigger("Blanco");
+        Invoke(nameof(ResetScene), 6);
     }
 
-    void ResetScene()
+    private void ResetScene()
     {
         SceneManager.LoadScene("MainInteraction");
     }
