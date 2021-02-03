@@ -1,6 +1,7 @@
 # CodeSample-ChalkRoads
 
 This is a code sample from a game I programmed for a university course, called Chalk Roads. The user has to fill in the icons (WhiteCircles) and escape from the blobs (BlackCircles). Developed in Unity using C#.
+
 This game was developed two years ago, but the code was recently refactored for this sample. This is most of the logic; the only script missing is the "WhiteCircle" script. But, as this was a team effort, I uploaded only the code made by me.
 
 
