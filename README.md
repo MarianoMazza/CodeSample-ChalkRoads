@@ -2,8 +2,7 @@
 
 This is a code sample from a game I programmed for a university course. The user has to fill in the icons (WhiteCircles) and escape from the blobs (BlackCircles). Developed in Unity using C#.
 
-This game was developed two years ago, but the code was recently refactored for this sample. This is most of the logic; the only script missing is the "WhiteCircle" script. But, as this was a team effort, I uploaded only the code made by me.
-
+This game was developed two years ago, and the code was refactored for this sample. This is most of the logic; the only missing script is the "WhiteCircle" script, which controls the smaller white circles the user has to fill in.
 
 
 ![Image of MarianoMazza](https://user-images.githubusercontent.com/17933094/105866256-92776080-5fd2-11eb-834e-e479ab3f4218.png)
