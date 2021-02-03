@@ -80,13 +80,13 @@ public class GameManager : MonoBehaviour
 
     private void Loss()
     {
-        this.GetComponent<Animator>().SetTrigger("Negro");
+        this.GetComponent<Animator>().SetTrigger("BadEnding");
         Invoke(nameof(ResetScene), 6);
     }
 
     private void Victory()
     {
-        this.GetComponent<Animator>().SetTrigger("Blanco");
+        this.GetComponent<Animator>().SetTrigger("GoodEnding");
         Invoke(nameof(ResetScene), 6);
     }
 
